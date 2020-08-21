@@ -36,13 +36,29 @@ export default class Queue {
     return node.data;
   }
 
+  peek() {
+    if (this.head === null)
+      return null;
+    return this.head.data;
+  }
+
+  isEmpty() {
+    return (this.head === null);
+  }
+
   display() {
-    let currentNode = this.top;
+    let currentNode = this.head;
 
     while (currentNode !== null) {
       console.log(currentNode.data);
       currentNode = currentNode.next;
     }
+
+    if (this.head !== null)
+      console.log('head: ', this.head.data);
+
+    if (this.tail !== null)
+      console.log('tail: ', this.tail.data);
   }
 }
 

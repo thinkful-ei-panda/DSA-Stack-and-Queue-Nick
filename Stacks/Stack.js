@@ -39,6 +39,8 @@ export default class Stack {
       console.log(currentNode.data);
       currentNode = currentNode.next;
     }
+    if (this.top !== null)
+      console.log('top: ', this.top.data);
   }
 
 }
