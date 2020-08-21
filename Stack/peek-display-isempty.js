@@ -13,7 +13,14 @@ function main() {
   for (const i in characters)
     starTrek.push(characters[i]);
 
-  starTrek.print();
+  // peek
+  console.log(starTrek.peek());
+
+  // isEmpty
+  console.log(starTrek.isEmpty());
+
+  // display
+  starTrek.display();
 }
 
 main();

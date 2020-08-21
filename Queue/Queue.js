@@ -36,7 +36,7 @@ export default class Queue {
     return node.data;
   }
 
-  print() {
+  display() {
     let currentNode = this.top;
 
     while (currentNode !== null) {

@@ -20,11 +20,17 @@ export default class Stack {
     return node.data;
   }
 
+  // time complexity O(1)
   peek() {
     return this.top.data;
   }
 
-  print() {
+  // time complexity O(1)
+  isEmpty() {
+    return Boolean(!this.top);
+  }
+
+  display() {
     let currentNode = this.top;
 
     while (currentNode !== null) {
