@@ -22,6 +22,8 @@ export default class Stack {
 
   // time complexity O(1)
   peek() {
+    if (this.top === null)
+      return null;
     return this.top.data;
   }
 
