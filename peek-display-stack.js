@@ -13,7 +13,9 @@ function main() {
   for (const i in characters)
     starTrek.push(characters[i]);
 
-  starTrek.print();
+
+
+  // starTrek.print();
 }
 
 main();

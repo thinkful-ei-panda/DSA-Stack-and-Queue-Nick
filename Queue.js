@@ -35,6 +35,15 @@ export default class Queue {
 
     return node.data;
   }
+
+  print() {
+    let currentNode = this.top;
+
+    while (currentNode !== null) {
+      console.log(currentNode.data);
+      currentNode = currentNode.next;
+    }
+  }
 }
 
 class _Node {
